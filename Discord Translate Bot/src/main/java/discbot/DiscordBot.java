@@ -23,7 +23,7 @@ import java.util.List;
 public class DiscordBot extends ListenerAdapter {
     public static List<TextChannel> translateChannel;
     public static void main(String[] args) throws IOException {
-        JDA bot= (JDA) JDABuilder.createDefault("MTA2MDgwNTAyNzYyNDY1Njk2Ng.GHhVr8.kudKrOcBojhH2jai5mpIH6_-2uM8y4mOmoXh_k")
+        JDA bot= (JDA) JDABuilder.createDefault("token")
                 .enableIntents(GatewayIntent.MESSAGE_CONTENT)
                 .setActivity(Activity.listening("to ur mom"))
                 .addEventListeners(new DiscordBot())
